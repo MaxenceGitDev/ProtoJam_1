@@ -1,13 +1,61 @@
+/* page réservation */
+.reservations {
+  max-width: 50%;
+  color: white;
+  border-color: white;
+  background-color: var(--main-bg-color);
+  --main-bg-color: black;
+  color: var(--main-fontsize-color);
+  --main-fontsize-color: white;
+}
+
 /* nav de la reservation */
 .nav-reservations {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
-/* bouttons */
+/* tous les bouttons */
 .buttons {
   display: flex;
   flex-direction: column;
+}
+
+.button-couvert-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-couvert-choice > .button-nb-couverts {
+  color: var(--main-fontsize-color);
+  background-color: var(--main-bg-color);
+  border-color: white;
+}
+
+.buttons > .button-date {
+  color: var(--main-fontsize-color);
+  background-color: var(--main-bg-color);
+  border-color: white;
+}
+
+.buttons > .button-reservation {
+  color: var(--main-fontsize-color);
+  background-color: var(--main-bg-color);
+  border-color: white;
+}
+
+.button-couvert-choice > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  gap: 1rem;
+}
+
+.button-couvert-choice > ul > li {
+  display: flex;
+  padding: 0.5rem;
+  color: var(--main-fontsize-color);
 }
