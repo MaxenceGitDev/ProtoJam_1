@@ -1,16 +1,46 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import Logo from "../assets/images/WildCastle_logo.png";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
-    <nav>
-      <div className="logo">
-        <img src={Logo} alt="WildCastle Logo" />
-      </div>
-      <ul>
-        <li>
-          <Link to={"#"}>Villes</Link>
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li
+          className="villes"
+          onMouseEnter={() => setShowDropdown(true)}
+          onMouseLeave={() => setShowDropdown(false)}
+        >
+          <Link to="#">Villes</Link>
+          {showDropdown && (
+            <ul className="dropdown">
+              <ul className="dropdown">
+                <li>
+                  <Link to="/choice/London" className="link">
+                    London
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/choice/Brighton" className="link">
+                    Brighton
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/choice/Liverpool" className="link">
+                    Liverpool
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/choice/Manchester" className="link">
+                    Manchester
+                  </Link>
+                </li>
+              </ul>
+            </ul>
+          )}
         </li>
         <li>
           <Link to="/reservation">Réservations</Link>
