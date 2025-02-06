@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../styles/Choice.css";
 
 export default function Choice() {
+	const { city } = useParams();
 	return (
 		<>
 			<h1>Composant navbar</h1>
 			<div className="city">
-				<h2>Nom de ville "dynamique"</h2>
+				<h2>{city}</h2>
 			</div>
 			<section className="main-section">
 				<section className="tea-section">
