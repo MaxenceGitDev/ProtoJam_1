@@ -1,0 +1,48 @@
+.city {
+	display: flex;
+	justify-content: center;
+}
+.city > h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.main-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4rem;
+}
+.tea-section {
+	height: 25rem;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem 0 0 1rem;
+	border-right: solid 1px grey;
+}
+.bals-section {
+	height: 25rem;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 1rem 1rem 0;
+}
+
+.tea-section:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: 0.7s;
+}
+.bals-section:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: 0.7s;
+}
+.selection {
+	text-decoration: none;
+	color: black;
+}
+.selection > h2 {
+	font-size: 3rem;
+	font-weight: 400;
+}
