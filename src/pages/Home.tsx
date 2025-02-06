@@ -11,16 +11,16 @@ export default function Home() {
 				<h3>Veuillez sélectionner votre ville</h3>
 			</div>
 			<section className="home-container">
-				<Link to="/choice" className="link">
+				<Link to="/choice/London" className="link">
 					London
 				</Link>
-				<Link to="/choice" className="link">
+				<Link to="/choice/Brighton" className="link">
 					Brighton
 				</Link>
-				<Link to="/choice" className="link">
+				<Link to="/choice/Liverpool" className="link">
 					Liverpool
 				</Link>
-				<Link to="/choice" className="link">
+				<Link to="/choice/Manchester" className="link">
 					Manchester
 				</Link>
 			</section>
