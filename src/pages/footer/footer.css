@@ -1,0 +1,13 @@
+.footer-containers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-containers > h1 {
+  font-size: 1rem;
+}
