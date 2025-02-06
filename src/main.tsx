@@ -12,6 +12,7 @@ import Reservation from "./pages/Reservation.tsx";
 
 // import css
 import "./components/footer/footer.css";
+import "./styles/reservation.css";
 
 const router = createBrowserRouter([
   {

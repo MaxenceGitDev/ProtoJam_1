@@ -1,4 +1,18 @@
+import { useState } from "react";
+
 export default function Reservation() {
+  const [couverts, setCouverts] = useState(2);
+  const [showOptions, setShowOptions] = useState(false);
+
+  const options = [1, 2, 3, 4, 5, 6, 7, 8];
+
+  const [date, setDate] = useState("");
+  const [showDateOptions, setShowDateOptions] = useState(false);
+
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDate(e.target.value);
+  };
+
   return (
     <>
       <div className="reservations">
@@ -7,9 +21,50 @@ export default function Reservation() {
           <h1>WildCastle</h1>
         </div>
         <div className="buttons">
-          <button type="button">2 couverts</button>
-          <button type="button">Aujourd'hui</button>
-          <button type="button">Réserver</button>
+          <div className="button-couvert-choice">
+            <button
+              className="button-nb-couverts"
+              type="button"
+              onClick={() => setShowOptions(!showOptions)}
+            >
+              {couverts} couverts
+            </button>
+            {showOptions && (
+              <ul>
+                {options.map((numberOptions) => (
+                  <li
+                    key={numberOptions}
+                    onClick={() => {
+                      setCouverts(numberOptions);
+                      setShowOptions(false);
+                    }}
+                  >
+                    {numberOptions}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <button
+            className="button-date"
+            type="button"
+            onClick={() => setShowDateOptions(!showDateOptions)}
+          >
+            Aujourd'hui
+          </button>
+          {showDateOptions && (
+            <div className="input-date">
+              <input
+                type="date"
+                name="date"
+                value={date}
+                onChange={handleDateChange}
+              />
+            </div>
+          )}
+          <button className="button-reservation" type="button">
+            Réserver
+          </button>
         </div>
       </div>
     </>

@@ -13,7 +13,7 @@ export default function Navbar() {
           <Link to={"#"}>Villes</Link>
         </li>
         <li>
-          <Link to={"#"}>Réservations</Link>
+          <Link to="/reservation">Réservations</Link>
         </li>
       </ul>
     </nav>
