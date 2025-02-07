@@ -15,3 +15,8 @@
 .footer-containers > img {
   max-width: 8%;
 }
+
+.footer-containers > .insta {
+  max-width: 2%;
+  margin-right: 6%;
+}
