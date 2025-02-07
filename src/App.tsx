@@ -4,13 +4,13 @@ import "./styles/App.css";
 import Footer from "./components/footer/Footer";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<Outlet />
+			<Footer />
+		</>
+	);
 }
 
 export default App;
