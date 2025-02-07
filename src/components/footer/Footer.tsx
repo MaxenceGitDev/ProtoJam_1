@@ -7,7 +7,11 @@ export default function Footer() {
           alt="WildCastle Logo"
         />
         <h1>@2025 WCS - Wild Castle</h1>
-        <img src="" alt="Logo-réseaux-sociaux" />
+        <img
+          className="insta"
+          src="/src/assets/images/insta.png"
+          alt="Logo-réseaux-sociaux"
+        />
       </footer>
     </>
   );
