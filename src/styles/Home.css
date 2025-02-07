@@ -7,8 +7,10 @@
   }
 }
 header > h2 {
+  display: flex;
   font-size: 1.5rem;
   font-weight: 500;
+  justify-content: center;
 }
 
 .suggestion {
