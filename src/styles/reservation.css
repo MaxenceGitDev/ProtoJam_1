@@ -1,165 +1,169 @@
 .page-reservation * {
-  --main-bg-color: black;
-  --main-fontsize-color: white;
-  border: none;
+	--main-bg-color: black;
+	--main-fontsize-color: white;
+	border: none;
+}
+
+.location-select > p {
+	text-align: center;
 }
 
 .reservations {
-  max-width: 33%;
-  background-color: var(--main-bg-color);
-  color: var(--main-fontsize-color);
-  border-radius: 1rem;
-  margin-left: 33%;
+	max-width: 33%;
+	background-color: var(--main-bg-color);
+	color: var(--main-fontsize-color);
+	border-radius: 1rem;
+	margin-left: 33%;
 }
 .page-reservation {
-  min-height: 60vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	min-height: 60vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* La section de réservation reste avec un fond noir */
 .page-reservation .reservations {
-  width: 33%;
-  max-width: 600px;
-  background-color: black;
-  color: var(--main-fontsize-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 0;
+	width: 33%;
+	max-width: 600px;
+	background-color: black;
+	color: var(--main-fontsize-color);
+	border-radius: 1rem;
+	padding: 2rem;
+	margin: 0;
 }
 
 /* nav de la reservation + changer border radius en double*/
 .nav-reservations {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--main-bg-color);
-  border-radius: 1rem;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--main-bg-color);
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav-reservations > h1 {
-  background-color: var(--main-bg-color);
-  font-size: 1rem;
-  padding-bottom: 1.5rem;
-  padding-top: 0.5rem;
+	background-color: var(--main-bg-color);
+	font-size: 1rem;
+	padding-bottom: 1.5rem;
+	padding-top: 0.5rem;
 }
 .nav-reservations > img {
-  background-color: var(--main-bg-color);
-  font-size: 0.8rem;
+	background-color: var(--main-bg-color);
+	font-size: 0.8rem;
 }
 
 /* tous les bouttons */
 .buttons {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-bg-color);
-  border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-bg-color);
+	border-radius: 1rem;
 }
 
 .button-couvert-choice {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-bg-color);
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-bg-color);
 }
 
 .button-couvert-choice > .button-nb-couverts {
-  color: var(--main-fontsize-color);
-  background-color: var(--main-bg-color);
-  font-size: 1rem;
-  display: flex;
-  padding: 2% 0;
-  width: 90%;
-  margin: 0.5rem auto;
-  border-radius: 0.5rem;
-  padding-left: 2%;
+	color: var(--main-fontsize-color);
+	background-color: var(--main-bg-color);
+	font-size: 1rem;
+	display: flex;
+	padding: 2% 0;
+	width: 90%;
+	margin: 0.5rem auto;
+	border-radius: 0.5rem;
+	padding-left: 2%;
 }
 
 .buttons > .button-couvert-choice > .button-nb-couverts {
-  max-width: 90%;
-  margin-left: 5%;
+	max-width: 90%;
+	margin-left: 5%;
 }
 
 .button-couvert-choice > .button-nb-couverts > b {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .button-couvert-choice > .button-nb-couverts:hover {
-  background-color: grey;
-  transition: 0.3s;
+	background-color: grey;
+	transition: 0.3s;
 }
 
 .buttons > .button-date {
-  color: var(--main-fontsize-color);
-  background-color: var(--main-bg-color);
-  font-size: 1rem;
-  display: flex;
-  padding: 2% 0;
-  width: 90%;
-  margin: 0.5rem auto;
-  border-radius: 0.5rem;
-  padding-left: 2%;
+	color: var(--main-fontsize-color);
+	background-color: var(--main-bg-color);
+	font-size: 1rem;
+	display: flex;
+	padding: 2% 0;
+	width: 90%;
+	margin: 0.5rem auto;
+	border-radius: 0.5rem;
+	padding-left: 2%;
 }
 
 .buttons > .button-date > b {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .buttons > .button-date:hover {
-  background-color: grey;
-  transition: 0.3s;
+	background-color: grey;
+	transition: 0.3s;
 }
 
 .buttons > .button-reservation {
-  color: black;
-  background-color: white;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  max-width: 90%;
-  border-radius: 0.5rem;
-  margin-left: 5%;
+	color: black;
+	background-color: white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	max-width: 90%;
+	border-radius: 0.5rem;
+	margin-left: 5%;
 }
 
 .buttons > .button-reservation:hover {
-  background-color: grey;
-  transition: 0.3s;
+	background-color: grey;
+	transition: 0.3s;
 }
 
 .button-couvert-choice > ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem;
-  gap: 1rem;
-  background-color: var(--main-bg-color);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0.8rem;
+	gap: 1rem;
+	background-color: var(--main-bg-color);
 }
 
 .button-couvert-choice > ul > li {
-  display: flex;
-  padding: 0.5rem;
-  color: var(--main-fontsize-color);
-  background-color: var(--main-bg-color);
+	display: flex;
+	padding: 0.5rem;
+	color: var(--main-fontsize-color);
+	background-color: var(--main-bg-color);
 }
 
 .button-couvert-choice > ul > li:hover {
-  background-color: grey;
+	background-color: grey;
 }
 
 .input-date {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .input-date input {
-  width: auto;
-  max-width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+	width: auto;
+	max-width: 100%;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 }

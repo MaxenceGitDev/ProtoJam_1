@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "../styles/Teatime.css";
-import { Link } from "react-router-dom";
 
 export default function Teatime() {
 	const { city } = useParams();
+	const navigate = useNavigate();
 	const TeaData = [
 		{
 			id: 1,
@@ -166,15 +166,26 @@ export default function Teatime() {
 								<img src={place.image} alt={place.name} className="tea-image" />
 								<h2 className="tea-name">{place.name}</h2>
 								<p className="tea-info">{place.dateTime}</p>
+								<button
+									type="button"
+									className="book-button"
+									onClick={() =>
+										navigate("/reservation", {
+											state: { placeName: place.name },
+										})
+									}
+								>
+									Book now
+								</button>
 							</li>
 						))}
 					</ul>
 				</div>
-				<Link to="/reservation">
+				{/* <Link to="/reservation">
 					<button type="button" className="book-button">
 						Book now
 					</button>
-				</Link>
+				</Link> */}
 			</div>
 		</>
 	);
