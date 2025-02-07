@@ -17,7 +17,7 @@ export default function Reservation() {
     <>
       <div className="reservations">
         <div className="nav-reservations">
-          <img src="" alt="menu burger choix de langues" />
+          <img src="" alt="languages burger" />
           <h1>WildCastle</h1>
         </div>
         <div className="buttons">
@@ -27,7 +27,7 @@ export default function Reservation() {
               type="button"
               onClick={() => setShowOptions(!showOptions)}
             >
-              {couverts} couverts
+              <b>{couverts} couverts</b>
             </button>
             {showOptions && (
               <ul>
@@ -50,7 +50,7 @@ export default function Reservation() {
             type="button"
             onClick={() => setShowDateOptions(!showDateOptions)}
           >
-            Aujourd'hui
+            <b>{date || "Aujourd'hui"}</b>
           </button>
           {showDateOptions && (
             <div className="input-date">
@@ -59,6 +59,7 @@ export default function Reservation() {
                 name="date"
                 value={date}
                 onChange={handleDateChange}
+                onBlur={() => setShowDateOptions(false)}
               />
             </div>
           )}

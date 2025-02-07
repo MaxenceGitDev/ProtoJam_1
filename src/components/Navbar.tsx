@@ -42,7 +42,16 @@ export default function Navbar() {
             </ul>
           )}
         </li>
-        <li>
+      </ul>
+
+      <Link to={"/"}>
+        <div className="logo">
+          <img src={Logo} alt="WildCastle Logo" />
+        </div>
+      </Link>
+
+      <ul className="nav-links">
+        <li className="reservations">
           <Link to="/reservation">Réservations</Link>
         </li>
       </ul>
