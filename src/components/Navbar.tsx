@@ -14,7 +14,7 @@ export default function Navbar() {
           onMouseEnter={() => setShowDropdown(true)}
           onMouseLeave={() => setShowDropdown(false)}
         >
-          <Link to="#">Villes</Link>
+          <Link to="#">Cities</Link>
           {showDropdown && (
             <ul className="dropdown">
               <ul className="dropdown">
@@ -52,7 +52,7 @@ export default function Navbar() {
 
       <ul className="nav-links">
         <li className="reservations">
-          <Link to="/reservation">Réservations</Link>
+          <Link to="/reservation">Booking</Link>
         </li>
       </ul>
     </nav>
