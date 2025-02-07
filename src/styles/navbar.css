@@ -1,61 +1,62 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  width: 80%;
-  margin: 0 auto;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .villes {
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
-  position: relative;
-  z-index: 1000;
+	padding-left: 2.2rem;
+	padding-right: 2.2rem;
+	position: relative;
+	z-index: 1000;
 }
 
 .villes a {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  padding: 1rem;
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	padding: 1rem;
 }
 
 .dropdown {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  z-index: 1;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	z-index: 1;
 }
 
 .dropdown li {
-  list-style: none;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+	list-style: none;
+	margin-top: 1rem;
+	font-size: 1.5rem;
 }
 
 .dropdown a {
-  display: block;
-  padding: 0.5rem 1rem;
-  margin: 0;
-}
-
-.logo {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
+	display: block;
+	padding: 0.5rem 1rem;
+	margin: 0;
 }
 
 .reservations a {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  padding: 1rem;
-  margin-bottom: 4rem;
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	padding: 1rem;
+	margin-bottom: 4rem;
+}
+
+.logo {
+	margin-top: 2rem;
+}
+
+.logo > img {
+	height: 11rem;
 }
