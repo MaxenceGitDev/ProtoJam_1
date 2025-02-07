@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <h2>Book your exceptional moment</h2>
+        <h2>Book your exceptional moment !</h2>
       </header>
       <div className="suggestion">
         <h3>Please select your city</h3>
