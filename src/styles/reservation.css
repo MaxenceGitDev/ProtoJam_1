@@ -1,7 +1,6 @@
 .page-reservation * {
-  /* Fond sombre pour toute la page */
-  --main-bg-color: black; /* Couleur de fond de la page */
-  --main-fontsize-color: white; /* Couleur du texte */
+  --main-bg-color: black;
+  --main-fontsize-color: white;
   border: none;
 }
 
@@ -11,22 +10,20 @@
   color: var(--main-fontsize-color);
   border-radius: 1rem;
   margin-left: 33%;
-  margin-top: 12%;
 }
 .page-reservation {
-  min-height: 100vh; /* 100% de la hauteur de la fenêtre */
-  width: 100%; /* 100% de la largeur de la fenêtre */
+  min-height: 60vh;
+  width: 100%;
   display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  align-items: center; /* Centrer verticalement */
-  background-color: #2c3037; /* Fond gris pour toute la page */
+  justify-content: center;
+  align-items: center;
 }
 
 /* La section de réservation reste avec un fond noir */
 .page-reservation .reservations {
   width: 33%;
-  max-width: 600px; /* Limite de largeur */
-  background-color: black; /* Fond noir pour l'encadré de réservation */
+  max-width: 600px;
+  background-color: black;
   color: var(--main-fontsize-color);
   border-radius: 1rem;
   padding: 2rem;

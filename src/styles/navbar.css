@@ -4,6 +4,11 @@
   align-items: center;
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 ul {
@@ -15,6 +20,10 @@ ul {
 .villes {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  position: relative;
+  z-index: 1000;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
   position: relative;
   z-index: 1000;
 }
@@ -68,4 +77,23 @@ ul {
   color: black;
   font-size: 2rem;
   height: 100%;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.reservations a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  margin-top: 2rem;
+}
+
+.logo > img {
+  height: 11rem;
 }
