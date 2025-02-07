@@ -15,42 +15,42 @@ import "./components/footer/footer.css";
 import "./styles/reservation.css";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/choice/:city",
-        element: <Choice />,
-      },
-      {
-        path: "/teatime",
-        element: <Teatime />,
-      },
-      {
-        path: "/bals",
-        element: <Bals />,
-      },
-      {
-        path: "/reservation",
-        element: <Reservation />,
-      },
-    ],
-  },
+	{
+		path: "/",
+		element: <App />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/choice/:city",
+				element: <Choice />,
+			},
+			{
+				path: "/teatime/:city",
+				element: <Teatime />,
+			},
+			{
+				path: "/bals",
+				element: <Bals />,
+			},
+			{
+				path: "/reservation",
+				element: <Reservation />,
+			},
+		],
+	},
 ]);
 
 const root = document.getElementById("root");
 
 if (!root) {
-  throw new Error("Erreur");
+	throw new Error("Erreur");
 }
 
 createRoot(root).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>,
 );
