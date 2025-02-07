@@ -11,3 +11,7 @@
 .footer-containers > h1 {
   font-size: 1rem;
 }
+
+.footer-containers > img {
+  max-width: 8%;
+}
