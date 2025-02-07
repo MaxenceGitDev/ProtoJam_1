@@ -1,10 +1,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
-  align-items: center;
 }
 
 ul {
@@ -14,8 +13,8 @@ ul {
 }
 
 .villes {
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   position: relative;
   z-index: 1000;
 }
@@ -47,15 +46,26 @@ ul {
 }
 
 .logo {
+  flex-grow: 2;
+  display: flex;
+  padding-right: 2rem;
+}
+
+.reservations {
   flex-grow: 1;
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 100%;
+  margin-bottom: 1.2rem;
+  padding-right: 2rem;
 }
 
 .reservations a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: black;
   font-size: 2rem;
-  padding: 1rem;
-  margin-bottom: 4rem;
+  height: 100%;
 }

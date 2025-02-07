@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <>
       <header>
-        <h1>Wild Castle</h1>
+        <h2>Book your exceptional moment</h2>
       </header>
       <div className="suggestion">
-        <h3>Veuillez sélectionner votre ville</h3>
+        <h3>Please select your city</h3>
       </div>
       <section className="home-container">
         <Link to="/choice/London" className="link">
