@@ -34,7 +34,7 @@ export default function Reservation() {
 								type="button"
 								onClick={() => setShowOptions(!showOptions)}
 							>
-								<b>{couverts} couverts</b>
+								<b>{couverts} places</b>
 							</button>
 							{showOptions && (
 								<ul>
@@ -58,7 +58,7 @@ export default function Reservation() {
 							type="button"
 							onClick={() => setShowDateOptions(!showDateOptions)}
 						>
-							<b>{date || "Aujourd'hui"}</b>
+							<b>{date || "Today"}</b>
 						</button>
 						{showDateOptions && (
 							<div className="input-date">
@@ -72,7 +72,7 @@ export default function Reservation() {
 							</div>
 						)}
 						<button className="button-reservation" type="button">
-							Réserver
+							checkout
 						</button>
 					</div>
 				</div>
