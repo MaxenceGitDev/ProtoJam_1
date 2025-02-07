@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Reservation() {
 	const [couverts, setCouverts] = useState(2);
@@ -13,12 +14,18 @@ export default function Reservation() {
 		setDate(e.target.value);
 	};
 
+	const location = useLocation();
+	const placeName = location.state?.placeName || "No place selected";
+
 	return (
 		<>
 			<div className="page-reservation">
 				<div className="reservations">
 					<div className="nav-reservations">
 						<h1>WildCastle</h1>
+					</div>
+					<div className="location-select">
+						<p>Your choice : {placeName}</p>
 					</div>
 					<div className="buttons">
 						<div className="button-couvert-choice">
@@ -27,7 +34,7 @@ export default function Reservation() {
 								type="button"
 								onClick={() => setShowOptions(!showOptions)}
 							>
-								<b>{couverts} Places</b>
+								<b>{couverts} places</b>
 							</button>
 							{showOptions && (
 								<ul>
