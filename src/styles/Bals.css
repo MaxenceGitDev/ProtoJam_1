@@ -6,6 +6,7 @@
 .events-container > h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
+	margin: 2rem;
 }
 
 .event-list {
@@ -22,6 +23,8 @@
 	width: 300px;
 	text-align: center;
 	flex-shrink: 0;
+	padding-bottom: 7px;
+	margin-bottom: 2rem;
 }
 
 .event-card:hover {
@@ -38,7 +41,7 @@
 	width: 100%;
 	height: 180px;
 	object-fit: cover;
-	border-radius: 0.5rem;
+	border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .event-name {
